@@ -75,4 +75,8 @@ if password.upper()=="RigbyW".upper():
         now = datetime.now() 
         dt_string = now.strftime("%d/%m/%Y %H:%M")
         print("The date and time is:", dt_string)
-
+    elif filetype.upper()=="dice".upper():
+       import random
+       number=input("What is the dice that you wish to roll: a d")
+       Roll=(random.randrange(1, number, 1))
+       print(f"you rolled a {Roll}")
