@@ -12,7 +12,10 @@
 # int=integer (number only)
 # str=string (words and numbers allowed but cant be used for math) 
 # float= a floating integer (useful for precise calculations)
-# 
+# github commands
+# git add (file name)
+# git coommit -m "(share comment on changelog)""
+# git push -u origin main
 print("this is a testing file, code here may or may not work so proceed with caution")
 name=input("What is your name? ")
 password=input("Enter Password to continue: ")
