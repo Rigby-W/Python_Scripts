@@ -73,6 +73,6 @@ if password.upper()=="RigbyW".upper():
     elif filetype.upper()=="clock".upper():
         from datetime import datetime
         now = datetime.now() 
-        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+        dt_string = now.strftime("%d/%m/%Y %H:%M")
         print("The date and time is", dt_string)
 
