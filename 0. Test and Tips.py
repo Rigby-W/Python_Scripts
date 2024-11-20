@@ -12,7 +12,7 @@
 # int=integer (number only)
 # str=string (words and numbers allowed but cant be used for math) 
 # float= a floating integer (useful for precise calculations)
-# github commands
+# github commands:
 # git add (file name)
 # git commit -m "(share comment on changelog)""
 # git push -u origin main
@@ -74,5 +74,5 @@ if password.upper()=="RigbyW".upper():
         from datetime import datetime
         now = datetime.now() 
         dt_string = now.strftime("%d/%m/%Y %H:%M")
-        print("The date and time is", dt_string)
+        print("The date and time is:", dt_string)
 
