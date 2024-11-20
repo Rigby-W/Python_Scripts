@@ -78,5 +78,6 @@ if password.upper()=="RigbyW".upper():
     elif filetype.upper()=="dice".upper():
        import random
        number=input("What is the dice that you wish to roll: a d")
+       number= int(number)
        Roll=(random.randrange(1, number, 1))
        print(f"you rolled a {Roll}")
