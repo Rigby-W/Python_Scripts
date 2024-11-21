@@ -54,7 +54,7 @@ if password.upper()=="RigbyW".upper():
         print("Welcome to the tip calculator! With new rounding technology!")
         basecost=input("What was the cost of the items? ") 
         tiprate=input("What is tip rate percent? ")
-        basecostx=float (basecost)
+        basecost=float (basecost)
         tiprate=float (tiprate)
         total=(basecost+(basecost*(tiprate/100)))
         total= round(total, 2)
