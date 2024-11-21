@@ -84,3 +84,20 @@ if password.upper()=="RigbyW".upper():
        number= int(number)
        Roll=(random.randrange(1, number, 1))
        print(f"you rolled a {Roll}")
+    elif filetype.upper()=="military".upper():
+        print("Welcome to the civilian to military time converter")
+        hour=input("what is the hour? ")
+        minute=input("what is the minute? ")
+        minute=int(minute)
+        hour=int(hour)
+        am_or_pm=input("Is it am or pm? ")
+        if am_or_pm.upper()=="pm".upper()and minute<10: 
+            pm_hour=(hour+12)
+            print(f"The time is {pm_hour}:0{minute}!")
+        elif am_or_pm.upper()=="am".upper()and minute<10:
+            print(f"The time is {hour}:0{minute}!")
+        elif am_or_pm.upper()=="pm".upper()and minute>=10: 
+            pm_hour=(hour+12)
+            print(f"The time is {pm_hour}:{minute}!")
+        elif am_or_pm.upper()=="am".upper()and minute>=10:
+            print(f"The time is {hour}:{minute}!")
