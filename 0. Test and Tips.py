@@ -4,6 +4,8 @@
 # x==y is x is equal to y
 # x<y is x is less than y
 # x>y is x is greater than y
+# x%y is to find the remainder
+# x**y is x to the power of y
 # useful terminal commands: 
 # "python": runs the python command with the same starting digit
 # "clear" : clears the termial to make it look cleaner
