@@ -16,6 +16,7 @@
 # git add (file name)
 # git commit -m "(share comment on changelog)""
 # git push -u origin main
+# git pull --all
 print("this is a testing file, code here may or may not work so proceed with caution")
 name=input("What is your name? ")
 password=input("Enter Password to continue: ")
