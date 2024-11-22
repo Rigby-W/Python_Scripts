@@ -29,29 +29,29 @@ if password.upper()=="RigbyW".upper():
         print("Welcome to the adding machine!")
         first_number=input("What is the first number? ") 
         second_number=input("What is the second number? ")
-        first_number=int (first_number)
-        second_number=int (second_number)
+        first_number=float (first_number)
+        second_number=float (second_number)
         print(first_number+second_number)
     elif filetype.upper()=="subtract".upper():
         print("Welcome to the subtracting machine!")
         first_number=input("What is the first number? ") 
         second_number=input("What is the second number? ")
-        first_number=int (first_number)
-        second_number=int (second_number)
+        first_number=float (first_number)
+        second_number=float (second_number)
         print(first_number-second_number)
     elif filetype.upper()=="multiply".upper():
         print("Welcome to the multiplying machine!")
         first_number=input("What is the first number? ") 
         second_number=input("What is the second number? ")
-        first_number=int (first_number)
-        second_number=int (second_number)
+        first_number=float (first_number)
+        second_number=float (second_number)
         print(first_number*second_number)
     elif filetype.upper()=="divide".upper():
         print("Welcome to the dividing machine!")
         first_number=input("What is the first number? ") 
         second_number=input("What is the second number? ")
-        first_number=int (first_number)
-        second_number=int (second_number)
+        first_number=float (first_number)
+        second_number=float (second_number)
         print(first_number/second_number)
     elif filetype.upper()=="tip".upper():
         print("Welcome to the tip calculator! With new rounding technology!")
@@ -66,12 +66,12 @@ if password.upper()=="RigbyW".upper():
     elif filetype.upper()=="root".upper():
         print("Welcome to the square rooting machine")
         first_number=input("what number do you wish to square root? ")
-        first_number=int (first_number)
+        first_number=float (first_number)
         print(first_number ** 0.5)
     elif filetype.upper()=="square".upper():
         print("Welcome to the squaring machine")
         first_number=input("what number do you wish to square? ")
-        first_number=int (first_number)
+        first_number=float (first_number)
         print(first_number ** 2)
     elif filetype.upper()=="clock".upper():
         from datetime import datetime
