@@ -1,5 +1,4 @@
 print("Welcome to The Adventure of you!!")
-name=input("What is your name? ")
 print("You wake up in a tavern What do you choose to do?")
 print("check")
 print("leave")
