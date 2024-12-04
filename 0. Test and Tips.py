@@ -110,7 +110,6 @@ while True:
                 x+=1
                 response=input("guess a number 1-100: ")
                 response=int(response)
-
                 if response==value:
                     print("You win")
                     break
