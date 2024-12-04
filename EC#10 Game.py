@@ -66,7 +66,7 @@ if start.upper()=="leave".upper():
         if answer.upper()=="Y".upper():
             print("you cannot purchase a peice and so you refuse his offer and go home safely")
             print("The end")
-        exit
+            exit
 if start.upper()=="drink".upper():
     print("You ask the bartender for a drink")
     print("the bartender tells you that you dont have enough money for a drink but he still allows you to sleep in the tavern")
