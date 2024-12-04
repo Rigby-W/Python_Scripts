@@ -22,9 +22,9 @@
 print("this is a testing file, code here may or may not work so proceed with caution")
 name=input("What is your name? ")
 password=input("Enter Password to continue: ")
-while True:    
-    if password.upper()=="RigbyW".upper(): 
-        print(f"Password Accepted. Welcome into the testing file, {name}.")
+if password.upper()=="RigbyW".upper(): 
+    print(f"Password Accepted. Welcome into the testing file, {name}.")
+    while True:        
         filetype=input("which testing file do you wish to access? ")
         if filetype.upper()=="add".upper():
             print("Welcome to the adding machine!")
@@ -117,6 +117,6 @@ while True:
                     print(f"{response} is greater than the answer you have {10-x} guesses left")
                 elif response < value:
                     print(f"{response} is less than than the answer you have {10-x} guesses left")
-    retry=input("do you wish to access a new file? [y/n] ")
-    if retry.upper()=="n".upper():
-        break
+        retry=input("do you wish to access a new file? [y/n] ")
+        if retry.upper()=="n".upper():
+            break
