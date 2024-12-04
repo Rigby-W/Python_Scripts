@@ -1,4 +1,4 @@
-print("Welcome to The Adventure of you!!")
+print("Welcome to The Adventure of You!!")
 print("You wake up in a tavern What do you choose to do?")
 print("check")
 print("leave")
