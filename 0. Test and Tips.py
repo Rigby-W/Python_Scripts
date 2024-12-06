@@ -39,7 +39,8 @@ if password.upper()=="RigbyW".upper():
         print("dice")
         print("military")
         print("guess")
-        print("hint")        
+        print("hint")
+        print("-------------")        
         filetype=input("which testing file do you wish to access? ")
         if filetype.upper()=="add".upper():
             print("Welcome to the adding machine!")
@@ -157,7 +158,7 @@ if password.upper()=="RigbyW".upper():
             elif filehint.upper()=="guess".upper():
                 print("Opens a guessing game where you have to guess a number 1-100")
             elif filehint.upper()=="hint".upper():
-                print("displays what a file does in cae you do not know")
+                print("displays what a file does in cae you do not know what it does")
         retry=input("do you wish to access a new file? [y/n] ")
         if retry.upper()=="n".upper():
             break
