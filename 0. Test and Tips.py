@@ -158,8 +158,6 @@ if password.upper()=="RigbyW".upper():
                 print("Opens a guessing game where you have to guess a number 1-100")
             elif filehint.upper()=="hint".upper():
                 print("displays what a file does in cae you do not know")
-                
-
         retry=input("do you wish to access a new file? [y/n] ")
         if retry.upper()=="n".upper():
             break
