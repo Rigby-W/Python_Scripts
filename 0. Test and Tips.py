@@ -25,6 +25,21 @@ password=input("Enter Password to continue: ")
 if password.upper()=="RigbyW".upper(): 
     print(f"Password Accepted. Welcome into the testing file, {name}.")
     while True:        
+        print("-------------")
+        print("Current files")
+        print("-------------")
+        print("add")
+        print("subtract")
+        print("multiply")
+        print("divide")
+        print("tip")
+        print("root")
+        print("square")
+        print("clock")
+        print("dice")
+        print("military")
+        print("guess")
+        print("hint")        
         filetype=input("which testing file do you wish to access? ")
         if filetype.upper()=="add".upper():
             print("Welcome to the adding machine!")
@@ -117,6 +132,34 @@ if password.upper()=="RigbyW".upper():
                     print(f"{response} is greater than the answer you have {10-x} guesses left")
                 elif response < value:
                     print(f"{response} is less than than the answer you have {10-x} guesses left")
+        elif filetype.upper()=="hint".upper():
+            filehint=input("what file do you wish to learn about? ")
+            if filehint.upper()=="add".upper():
+                print("adds two numbers together")
+            elif filehint.upper()=="subtract".upper():
+                print("subtracts the second number from the first number")
+            elif filehint.upper()=="multiply".upper():
+                print("multiplies two numbers together")
+            elif filehint.upper()=="divide".upper():
+                print("Divides the first number by the second number")
+            elif filehint.upper()=="tip".upper():
+                print("Calculates a tip using the price of an item and the current tip rate")
+            elif filehint.upper()=="root".upper():
+                print("Square roots a number")
+            elif filehint.upper()=="square".upper():
+                print("Squares a number")
+            elif filehint.upper()=="clock".upper():
+                print("Displays the time")
+            elif filehint.upper()=="dice".upper():
+                print("Rolls a dice with any number of sides")
+            elif filehint.upper()=="military".upper():
+                print("Changes the inputed time to military time")
+            elif filehint.upper()=="guess".upper():
+                print("Opens a guessing game where you have to guess a number 1-100")
+            elif filehint.upper()=="hint".upper():
+                print("displays what a file does in cae you do not know")
+                
+
         retry=input("do you wish to access a new file? [y/n] ")
         if retry.upper()=="n".upper():
             break
