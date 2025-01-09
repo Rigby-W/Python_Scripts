@@ -22,7 +22,6 @@
 from datetime import datetime
 import time
 import random
-from random import randint
 print("this is a testing file, code here may or may not work so proceed with caution")
 name=input("What is your name? ")
 password=input("Enter Password to continue: ")
@@ -128,7 +127,7 @@ if password.upper()=="RigbyW".upper():
             elif am_or_pm.upper()=="am".upper()and minute>=10:
                 print(f"The time is {hour}:{minute}!")
         elif filetype.upper()=="guess".upper():
-            value=randint(1,100)
+            value=random.randint(1,100)
             x=0
             for i in range(10):
                 x+=1
