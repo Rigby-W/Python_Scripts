@@ -97,10 +97,18 @@ if password.upper()=="RigbyW".upper():
             print("The date and time is:", dt_string)
         elif filetype.upper()=="dice".upper():
             import random
+            import time
             number=input("What is the dice that you wish to roll: a d")
+            dice=input("How many times should your dice roll: ")
+            dice= int(dice)
             number= int(number)
-            Roll=(random.randrange(1, number, 1))
-            print(f"you rolled a {Roll}")
+            x=0
+            for i in range (dice):    
+                Roll=(random.randrange(1, number, 1))
+                print(f"you rolled a {Roll}")
+                time.sleep (0.3)
+                x+=Roll
+            print(f"Your total is {x}")
         elif filetype.upper()=="military".upper():
             print("Welcome to the civilian to military time converter")
             hour=input("what is the hour? ")
