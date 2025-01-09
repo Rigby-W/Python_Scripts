@@ -108,7 +108,7 @@ if password.upper()=="RigbyW".upper():
                 print(f"you rolled a {Roll}")
                 time.sleep (0.3)
                 x+=Roll
-            print(f"Your total is {x}")
+            print(f"Your total is {x} and your average roll was {x/dice}")
         elif filetype.upper()=="military".upper():
             print("Welcome to the civilian to military time converter")
             hour=input("what is the hour? ")
