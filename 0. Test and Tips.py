@@ -19,6 +19,10 @@
 # git commit -m "(share comment on changelog)"
 # git push -u origin main
 # git pull --all
+from datetime import datetime
+import time
+import random
+from random import randint
 print("this is a testing file, code here may or may not work so proceed with caution")
 name=input("What is your name? ")
 password=input("Enter Password to continue: ")
@@ -91,13 +95,10 @@ if password.upper()=="RigbyW".upper():
             first_number=float (first_number)
             print(first_number ** 2)
         elif filetype.upper()=="clock".upper():
-            from datetime import datetime
             now = datetime.now() 
             dt_string = now.strftime("%d/%m/%Y %H:%M")
             print("The date and time is:", dt_string)
         elif filetype.upper()=="dice".upper():
-            import random
-            import time
             number=input("What is the dice that you wish to roll: a d")
             dice=input("How many times should your dice roll: ")
             dice= int(dice)
@@ -127,7 +128,6 @@ if password.upper()=="RigbyW".upper():
             elif am_or_pm.upper()=="am".upper()and minute>=10:
                 print(f"The time is {hour}:{minute}!")
         elif filetype.upper()=="guess".upper():
-            from random import randint
             value=randint(1,100)
             x=0
             for i in range(10):
