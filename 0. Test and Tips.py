@@ -102,6 +102,7 @@ if password.upper()=="RigbyW".upper():
             dice=input("How many times should your dice roll: ")
             dice= int(dice)
             number= int(number)
+            number+=1
             x=0
             for i in range (dice):    
                 Roll=(random.randrange(1, number, 1))
