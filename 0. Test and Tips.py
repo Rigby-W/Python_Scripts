@@ -181,7 +181,7 @@ if password.upper()=="RigbyW".upper():
             elif filehint.upper()=="clock".upper():
                 print("Displays the time")
             elif filehint.upper()=="dice".upper():
-                print("Rolls a dice with any number of sides")
+                print("Rolls a dice with any number of sides any number of times")
             elif filehint.upper()=="military".upper():
                 print("Changes the inputed time to military time")
             elif filehint.upper()=="guess".upper():
