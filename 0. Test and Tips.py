@@ -96,7 +96,7 @@ if password.upper()=="RigbyW".upper():
             print(first_number ** 2)
         elif filetype.upper()=="clock".upper():
             now = datetime.now() 
-            dt_string = now.strftime("%d/%m/%Y %H:%M")
+            dt_string = now.strftime("%m/%d/%Y %H:%M")
             print("The date and time is:", dt_string)
         elif filetype.upper()=="dice".upper():
             number=input("What is the dice that you wish to roll: a d")
