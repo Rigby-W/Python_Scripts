@@ -19,6 +19,7 @@
 # git commit -m "(share comment on changelog)"
 # git push -u origin main
 # git pull --all
+# git cd (name of repository)
 from datetime import datetime
 import time
 import random
