@@ -1,4 +1,8 @@
 # math commands:
+# x+y is addition
+# x-y is subtraction
+# x*y is multiplication
+# x/y is division
 # x<=y is x is less than or equal to y
 # x>=y is x is greater than or equal to y
 # x==y is x is equal to y
@@ -23,3 +27,6 @@
 # git pull --all    (pulls any new versions from the repository to your computer)
 # git cd "(name of repository)"   (needed to run a command in the repsoitory file instead of the file it is located in)
 # git clone     (creates a copy of your repository that you can edit)
+# Main imports:
+# time is useful for using the sleep command and it basically has a timer
+# random is good to pull something out of a range of data or numbers
