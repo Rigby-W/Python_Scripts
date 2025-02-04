@@ -30,3 +30,14 @@
 # Main imports:
 # time is useful for using the sleep command and it basically has a timer
 # random is good to pull something out of a range of data or numbers
+# Coding Commands:
+# if/elif/else is used to make toggles
+# def is used to define an object
+# class is used when importing other files to define what you want to import
+# input allows the user to make inputs using the console
+# print makes it write into the console
+# break is used to stop a loop
+# for (x) in (y) is a loop that decides for every x that is contained in y you loop the code
+# while (x) is a loop that is permanent until x changes
+# range (x, y, z) is a range from x-y will z as your steps (y and z default to one)
+# == means that it is equal for checks while = means it is equal for defining
