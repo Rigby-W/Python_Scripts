@@ -6,17 +6,12 @@ name=input("What is your name? ")
 password=input("Enter Password to continue: ")
 if password.upper()=="RigbyW".upper(): 
     print(f"Password Accepted. Welcome into the testing file, {name}.")
-    while True:        
+    while True:
         print("-------------")
         print("Current files")
         print("-------------")
-        print("add")
-        print("subtract")
-        print("multiply")
-        print("divide")
+        print("calculator")
         print("tip")
-        print("root")
-        print("square")
         print("clock")
         print("dice")
         print("military")
@@ -25,58 +20,48 @@ if password.upper()=="RigbyW".upper():
         print("hint")
         print("-------------")        
         filetype=input("which testing file do you wish to access? ")
-        if filetype.upper()=="add".upper():
-            print("Welcome to the adding machine!")
+        if filetype.upper()=="calculator".upper():
+            print("Welcome to the calculator!")
             first_number=input("What is the first number? ") 
             second_number=input("What is the second number? ")
             first_number=float (first_number)
             second_number=float (second_number)
-            print(first_number+second_number)
-        elif filetype.upper()=="subtract".upper():
-            print("Welcome to the subtracting machine!")
-            first_number=input("What is the first number? ") 
-            second_number=input("What is the second number? ")
-            first_number=float (first_number)
-            second_number=float (second_number)
-            print(first_number-second_number)
-        elif filetype.upper()=="multiply".upper():
-            print("Welcome to the multiplying machine!")
-            first_number=input("What is the first number? ") 
-            second_number=input("What is the second number? ")
-            first_number=float (first_number)
-            second_number=float (second_number)
-            print(first_number*second_number)
-        elif filetype.upper()=="divide".upper():
-            print("Welcome to the dividing machine!")
-            first_number=input("What is the first number? ") 
-            second_number=input("What is the second number? ")
-            first_number=float (first_number)
-            second_number=float (second_number)
-            print(first_number/second_number)
+            print("Current calculator programs")
+            print("---------------------------")
+            print("add")
+            print("subtract")
+            print("multiply")
+            print("divide")
+            print("exponent")
+            print("remainder")
+            print("---------------------------")
+            calculate=input("What would you like to do between these two numbers? ")    
+            if calculate.upper()=="add".upper():
+                print(first_number+second_number)
+            if calculate.upper()=="subtract".upper():
+                print(first_number-second_number)
+            if calculate.upper()=="divide".upper():
+                print(first_number/second_number)
+            if calculate.upper()=="multiply".upper():
+                print(first_number*second_number)
+            if calculate.upper()=="exponent".upper():
+                print(first_number**second_number)
+            if calculate.upper()=="remainder".upper():
+                print(first_number%second_number)
         elif filetype.upper()=="tip".upper():
-            print("Welcome to the tip calculator! With new rounding technology!")
-            basecost=input("What was the cost of the items? ") 
-            tiprate=input("What is tip rate percent? ")
+            print("Welcome to the tipping machine!")
+            basecost=input("What was the cost of the purchase? ") 
+            tiprate=input("What is tip rate in percent? ___%")
             basecost=float (basecost)
             tiprate=float (tiprate)
             total=(basecost+(basecost*(tiprate/100)))
             total= round(total, 2)
             total=str(total)
             print(f"Your total is: ${total}")
-        elif filetype.upper()=="root".upper():
-            print("Welcome to the square rooting machine")
-            first_number=input("what number do you wish to square root? ")
-            first_number=float (first_number)
-            print(first_number ** 0.5)
-        elif filetype.upper()=="square".upper():
-            print("Welcome to the squaring machine")
-            first_number=input("what number do you wish to square? ")
-            first_number=float (first_number)
-            print(first_number ** 2)
         elif filetype.upper()=="clock".upper():
             now = datetime.now() 
-            dt_string = now.strftime("%m/%d/%Y %H:%M")
-            print("The date and time is:", dt_string)
+            dt_string = now.strftime(f"%m/%d/%Y %H:%M")
+            print(f"The date and time is: {dt_string}")
         elif filetype.upper()=="dice".upper():
             number=input("What is the dice that you wish to roll: a d")
             dice=input("How many times should your dice roll: ")
@@ -143,20 +128,10 @@ if password.upper()=="RigbyW".upper():
                     print(f"Your card is {random.choice(All_Arcana)} upright")
         elif filetype.upper()=="hint".upper():
             filehint=input("what file do you wish to learn about? ")
-            if filehint.upper()=="add".upper():
-                print("adds two numbers together")
-            elif filehint.upper()=="subtract".upper():
-                print("subtracts the second number from the first number")
-            elif filehint.upper()=="multiply".upper():
-                print("multiplies two numbers together")
-            elif filehint.upper()=="divide".upper():
-                print("Divides the first number by the second number")
+            if filehint.upper()=="calculate".upper():
+                print("A rudimentary calculator")
             elif filehint.upper()=="tip".upper():
                 print("Calculates a tip using the price of an item and the current tip rate")
-            elif filehint.upper()=="root".upper():
-                print("Square roots a number")
-            elif filehint.upper()=="square".upper():
-                print("Squares a number")
             elif filehint.upper()=="clock".upper():
                 print("Displays the time")
             elif filehint.upper()=="dice".upper():
