@@ -96,6 +96,7 @@ if password.upper()=="RigbyW".upper():
             print("Current games")
             print("-------------------------")
             print("Guessing Game (or GG)")
+            print("Rock Paper Scissors (or RPS)")
             print("-------------------------")
             gametype=input("What game would you like to play? ")
             if gametype.upper()=="guessing game".upper() or gametype.upper()=="GG".upper():
@@ -112,6 +113,39 @@ if password.upper()=="RigbyW".upper():
                         print(f"{response} is greater than the answer you have {10-x} guesses left")
                     elif response < value:
                         print(f"{response} is less than than the answer you have {10-x} guesses left")
+            elif gametype.upper()=="rock paper scissors".upper() or gametype.upper()=="rps".upper():
+                while True:
+                    choice=input("rock paper or scissors? (Or R, P, S) ")
+                    if choice.upper()=="rock".upper() or choice.upper()=="r".upper():
+                        rps=(random.randrange(1, 4, 1))
+                        if rps==1:
+                            print("your opponent chose rock you tie")
+                        elif rps==2:
+                            print("your opponent chose paper you lose")
+                            break
+                        elif rps==3:
+                            print("your opponent chose scissors you win")
+                            break
+                    elif choice.upper()=="paper".upper() or choice.upper()=="p".upper():
+                        rps=(random.randrange(1, 4, 1))
+                        if rps==1:
+                            print("your opponent chose rock you win")
+                            break
+                        elif rps==2:
+                            print("your opponent chose paper you tie")
+                        elif rps==3:
+                            print("your opponent chose scissors you lose")
+                            break
+                    elif choice.upper()=="scissors".upper() or choice.upper()=="s".upper():
+                        rps=(random.randrange(1, 4, 1))
+                        if rps==1:
+                            print("your opponent chose rock you lose")
+                            break
+                        elif rps==2:
+                            print("your opponent chose paper you win")
+                            break
+                        elif rps==3:
+                            print("your opponent chose scissors you tie")
         elif filetype.upper()=="tarot".upper():
             Minor_Arcana =('Ace of Swords','Two of Swords','Three of Swords','Four of Swords','Five of Swords','Six of Swords','Seven of Swords','Eight of Swords','Nine of Swords','Ten of Swords','Page of Swords','Knight of Swords','Queen of Swords','King of Swords','Ace of Wands','Two of Wands','Three of Wands','Four of Wands','Five of Wands','Six of Wands','Seven of Wands','Eight of Wands','Nine of Wands','Ten of Wands','Page of Wands','Knight of Wands','Queen of Wands','King of Wands','Ace of Pentacles','Two of Pentacles','Three of Pentacles','Four of Pentacles','Five of Pentacles','Six of Pentacles','Seven of Pentacles','Eight of Pentacles','Nine of Pentacles','Ten of Pentacles','Page of Pentacles','Knight of Pentacles','Queen of Pentacles','King of Pentacles','Ace of Cups','Two of Cups','Three of Cups','Four of Cups','Five of Cups','Six of Cups','Seven of Cups','Eight of Cups','Nine of Cups','Ten of Cups','Page of Cups','Knight of Cups','Queen of Cups','King of Cups')
             Major_Arcana = ('The Magician','The High Priestess','The Empress','The Emperor','The Hierophant','The Lovers','The Chariot','Strength','The Hermit','Wheel of Fortune','Justice','The Hanged Man','Death','Temperance','The Devil','The Tower','The moon','The sun','Judgement','The World')
