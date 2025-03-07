@@ -4,7 +4,7 @@ import random
 print("This is a testing file, code here may or may not work so proceed with caution")
 name=input("What is your name? ")
 password=input("Enter Password to continue: ")
-if password.upper()=="RigbyW".upper(): 
+if password.upper()=="password".upper(): 
     print(f"Password Accepted. Welcome into the testing file, {name}.")
     while True:
         print("-------------")
