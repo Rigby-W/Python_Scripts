@@ -14,7 +14,6 @@ if password.upper()=="password".upper():
         print("Tip")
         print("Clock")
         print("Dice")
-        print("Military")
         print("Games")
         print("Tarot")
         print("Hint")
@@ -75,23 +74,6 @@ if password.upper()=="password".upper():
                 time.sleep (0.3)
                 x+=Roll
             print(f"Your total is {x} and your average roll was {x/dice}")
-        elif filetype.upper()=="military".upper():
-            print("Welcome to the civilian to military time converter")
-            hour=input("what is the hour? ")
-            minute=input("what is the minute? ")
-            minute=int(minute)
-            hour=int(hour)
-            am_or_pm=input("Is it am or pm? ")
-            if am_or_pm.upper()=="pm".upper()and minute<10: 
-                pm_hour=(hour+12)
-                print(f"The time is {pm_hour}:0{minute}!")
-            elif am_or_pm.upper()=="am".upper()and minute<10:
-                print(f"The time is {hour}:0{minute}!")
-            elif am_or_pm.upper()=="pm".upper()and minute>=10: 
-                pm_hour=(hour+12)
-                print(f"The time is {pm_hour}:{minute}!")
-            elif am_or_pm.upper()=="am".upper()and minute>=10:
-                print(f"The time is {hour}:{minute}!")
         elif filetype.upper()=="Games".upper():
             print("Current games")
             print("-------------------------")
@@ -176,8 +158,6 @@ if password.upper()=="password".upper():
                 print("Displays the time")
             elif filehint.upper()=="dice".upper():
                 print("Rolls a dice with any number of sides any number of times")
-            elif filehint.upper()=="military".upper():
-                print("Changes the inputed time to military time")
             elif filehint.upper()=="games".upper():
                 print("Opens a list of a few games you can play")
             elif filehint.upper()=="tarot".upper():
