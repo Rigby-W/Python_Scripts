@@ -150,7 +150,7 @@ if password.upper()=="password".upper():
                     print(f"Your card is {random.choice(All_Arcana)} upright")
         elif filetype.upper()=="hint".upper():
             filehint=input("What file do you wish to learn about? ")
-            if filehint.upper()=="calculate".upper():
+            if filehint.upper()=="calculator".upper():
                 print("A rudimentary calculator")
             elif filehint.upper()=="tip".upper():
                 print("Calculates a tip using the price of an item and the current tip rate")
