@@ -32,5 +32,10 @@ if choice1.upper()=="a town".upper():
     loot=5
     gold+=loot
     print(f"You collected {loot} gold, you have {gold} gold!")
+    print("-------------------------")
+    print("a store")
+    print("a house")
+    print("a pub")
+    print("-------------------------")
 if choice1.upper()=="a forest".upper():
     print("You walk into the forest")
