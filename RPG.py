@@ -75,7 +75,7 @@ def main():
     start = input("What do you see? ").strip().lower()
     
     if start == "a town":
-        town_adventure(gold)
+        town_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
     elif start == "a forest":
         print("You walk into the forest")
     else:
