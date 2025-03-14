@@ -70,7 +70,7 @@ def main():
     elif start == "a forest":
         forest_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
     else:
-        print("Invalid choice, please restart the game.")
+        print("Invalid choice, please choose a valid option.")
 gold = 0
 print(f"Welcome {pronoun4} {name} to the wonderful world of Adventuria.")
 time.sleep(1)
