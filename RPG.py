@@ -25,6 +25,7 @@ def town_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
         print("a store")
         print("a house")
         print("a pub")
+        print("leave town")
         print("-------------------------")
         town_location = input("Where do you wish to go? ").strip().lower()
         time.sleep(0.75)
@@ -52,9 +53,12 @@ def town_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
                 print("You take a drink")
             elif drink_choice in ("n", "no"):
                 print("You decline his offer to take a drink and leave")
+        elif town_location == "a store":
+            in_town=False
         else:
             print("Invalid choice, please choose again.")
         time.sleep(0.5)
+        
 
 def main():
     name = input("What is your name? ").capitalize().strip()
@@ -76,3 +80,5 @@ def main():
         print("You walk into the forest")
     else:
         print("Invalid choice, please restart the game.")
+
+main()
