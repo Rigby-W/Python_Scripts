@@ -1,5 +1,6 @@
 import time
-
+name = input("What is your name? ").capitalize().strip()
+gender = input("What is your gender? Male, Female, Or Other? ").strip().lower()
 def get_pronouns(gender):
     pronouns = {
         "MALE": ("he", "him", "his", "sir", "mister"),
@@ -7,11 +8,7 @@ def get_pronouns(gender):
         "OTHER": ("they", "them", "theirs", "lord", "mix")
     }
     return pronouns.get(gender.upper(), ("they", "them", "theirs", "lord", "mix"))
-
-def display_intro(name, pronoun4):
-    print(f"Welcome {pronoun4} {name} to the wonderful world of Adventuria.")
-    time.sleep(1)
-    print(f"You wake up in a field dazed with only the memory of your name, {name}.")
+(pronoun1, pronoun2, pronoun3, pronoun4, pronoun5) = get_pronouns(gender)
 def town_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name):
     print(f"You see a town in the distance and you start walking towards the town and you find some money on the floor")
     loot = 5
@@ -58,27 +55,25 @@ def town_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
         else:
             print("Invalid choice, please choose again.")
         time.sleep(0.5)
-        
+def forest_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name):
+    print(f"you walk into a deep forest and stumble a shack in the woods with an old man inside")
 
-def main():
-    name = input("What is your name? ").capitalize().strip()
-    gender = input("What is your gender? Male, Female, Or Other? ").strip().lower()
-    (pronoun1, pronoun2, pronoun3, pronoun4, pronoun5) = get_pronouns(gender)
-    gold = 0
-    display_intro(name, pronoun4)
-    
+def main(): 
     time.sleep(1)
     print("-------------------------")
     print("a town")
     print("a forest")
     print("-------------------------")
-    start = input("What do you see? ").strip().lower()
-    
+    start = input("Where do you wish to go? ").strip().lower()
     if start == "a town":
         town_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
     elif start == "a forest":
-        print("You walk into the forest")
+        forest_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
     else:
         print("Invalid choice, please restart the game.")
-
-main()
+gold = 0
+print(f"Welcome {pronoun4} {name} to the wonderful world of Adventuria.")
+time.sleep(1)
+print(f"You wake up in a field dazed with only the memory of your name, {name}.")
+while True:
+    main()
