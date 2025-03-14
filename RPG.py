@@ -53,7 +53,7 @@ def town_adventure(gold, pronoun1, pronoun2, pronoun3, pronoun4, pronoun5, name)
                 print("You take a drink")
             elif drink_choice in ("n", "no"):
                 print("You decline his offer to take a drink and leave")
-        elif town_location == "a store":
+        elif town_location == "leave town":
             in_town=False
         else:
             print("Invalid choice, please choose again.")
