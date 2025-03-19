@@ -95,6 +95,8 @@ if password.upper()=="password".upper():
                         print(f"{response} is greater than the answer you have {10-x} guesses left")
                     elif response < value:
                         print(f"{response} is less than than the answer you have {10-x} guesses left")
+                    if x==10:
+                        print("You lose :(")
             elif gametype.upper()=="rock paper scissors".upper() or gametype.upper()=="rps".upper():
                 while True:
                     choice=input("rock paper or scissors? (Or R, P, S) ")
